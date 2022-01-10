@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&family=Noto+Serif+Display:ital,wght@0,100;1,100&family=Poppins:wght@100;300;500&family=Roboto+Slab:wght@100&family=Roboto:wght@100;400&display=swap');
+@keyframes colors{
+    0%{background-color: rgb(245, 204, 250);}
+    25%{background-color: rgb(225, 201, 243);}
+    50%{background-color: rgb(243, 181, 243);}
+    75%{background-color: rgb(216, 165, 216);}
+    100%{background-color: rgb(238, 190, 230);}
+}
+*{
+    font-family: Poppins;
+    font-weight: 300;
+}
+body{background-color: white;
+    animation-name: colors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+.container-fluid{
+   max-width: 100%;
+   position: sticky;
+
+} 
+
+.navbar {
+    position: sticky;
+    color: purple;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .caption p .btn-default {
+    background-color: rgb(190, 122, 240);
+    color: purple;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   
+}
+
+.container .caption p .btn-default:hover {
+    background-color: indigo;
+    color: white;
+}
+
+#sideBar {
+    background-color: rgb(226, 203, 243);
+    padding: 2%;
+    border: purple solid;
+    border-width: 10px;
+    border-style: ridge;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px indigo;
+}
+
+table {
+    border-radius: 8px;
+}
+
+.navbar a .navbar-brand {
+    color: rebeccapurple;
+}
+.container .row  .col-md-3 {
+    justify-content: space-evenly;
+    justify-items: center;
+    
+   
+}
+.navbar .navbar-nav {
+    text-align: justify;
+}
+
+.container #sidebar h3,
+h4 {
+    text-align: center;
+    color: purple;
+}
+
+.container #sidebar h4,
+h3 {
+    text-align: center;
+    color: purple;
+}
+
+.container-fluid .navbar .navbar-brand {
+    color: purple;
+    
+}
+
+.container-fluid .navbar .navbar-brand h4:hover {
+    color:rgb(182, 85, 182);
+}
+
+.container-fluid .navbar .navbar-nav .nav-item .nav-link {
+    color: purple;
+}
+
+.container-fluid .navbar .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(182, 85, 182);
+}
+.container .caption .btn {
+font-weight: 300;
+}
+.container-fluid .navbar .navbar-nav .nav-item-active .nav-link:hover{
+    color: purple;
+}
+.container-fluid .navbar .navbar-nav .nav-item-active .nav-link{
+    color:rgb(252, 6, 252);
+}
+/*Create Account Page*/
+.createAcount-box h3{
+    text-align:center;
+    color:purple;
+    padding:10px;
+}
+.createAcount-box label{
+    color:purple;
+}
+.createAcount-box{
+    background-color: rgba(250, 203, 250, 0.952); 
+    justify-self: center;
+    
+    display:inline-block;
+    height: 50%;
+    width: 50%;
+    margin-top:5px ;
+    margin-bottom: 5px;
+    margin-left: 25%;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px purple solid;
+    box-shadow: 0 8px 16px 0 rgba(65, 44, 44, 0.2);
+    
+
+   
+}
+
+.createAcount-box form{
+    
+    padding:5px;
+    margin:0 auto;
+    display: inline-block;
+    
+}
+.createAcount-box form input[type=text]{
+    padding:5px;
+    width:100%;
+    border: 1px purple solid;
+    border-radius: 5px;
+
+}
+.createAcount-box form input[type=password]{
+    padding:5px;
+    width:100%;
+    border: 1px purple solid;
+    border-radius: 5px;
+
+}
+
+.createAcount-box form label{
+    padding:5px;
+}
+.createAcount-box form .button{
+
+    width:100%;
+    padding:3px;
+    margin-top: 15px;
+    background-color:purple;
+    color:rgb(226, 203, 243);
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.createAcount-box form .button:hover{ color:purple;
+    background-color:rgb(179, 85, 179);
+
+
+}
+.createAcount-box p{
+    text-align: center;
+}
+.createAcount-box p a{
+    text-decoration: none;
+    color:purple;
+}
+.createAcount-box p a:hover{
+    color:rgb(252, 6, 252);
+}
+/*Products Page*/
+.thumbnail img{
+     
+     transition-duration: 2s;
+     transform: 2s
+    }
+ .thumbnail img:hover{
+     width: 300px;
+     height: 300px;
+     
+ }
+ .thumbnail .img-thumbnail{
+     border: 1px solid purple;
+     padding: 5px;
+     
+ }
+ .container .table{
+     border: 3px solid purple;
+     border-radius: 20px;
+     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+     
+ }
+ /*Home Page*/
+ @keyframes carousel{
+     0%{left: 0;}
+     10%{left:0;}
+     20%{left: -100%;}
+     30%{left:-100%;}
+     40%{left:-200%;}
+     50%{left:-200%;}
+     60%{left:-300%;}
+    70%{left: -300%;}
+    80%{left: -400%;}
+    90%{left: -400%;}
+    100%{left: -500%;}
+ }
+
+ .slider{
+     
+     
+     margin:0 
+     
+     200px 0 200px;
+    overflow:hidden;
+     
+    }
+.slider .images{ 
+    position:relative;
+    width: 500%;
+    height: 400px;
+    margin: auto;
+    margin-left: 0;
+    animation-name:carousel ;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+   
+  }
+  .slider .images img{
+      width: 20%;
+      float: left;
+      height:400px;
+  }
+  .slider .images .text-center{
+    width: 20%;
+    float: left;
+    height:400px;
+    
+}
+.slider .images .text-center p{
+    font-weight: 900;
+    font-size: 50px;
+    color: purple;
+
+}
+footer {
+    background-color: purple;
+    color:rgb(216, 165, 216);
+    padding: 15px;
+    
+}
+/*Footer*/
+ footer .container h4{
+     color:rgb(243, 222, 243)
+ }
+ footer .container .btn-default{
+     color: rgb(252, 6, 252);
+     background-color: rgba(250, 203, 250, 0.952);
+ }
+ footer .container .btn-default:hover{
+     color: rgba(250, 203, 250, 0.952);
+     background-color: rgb(252, 6, 252);
+ }
+ footer .container .col-md-3 .list ul li a{
+     text-decoration: none;
+     color:rgb(243, 181, 243);
+
+ }
+ footer .container .col-md-3 .list ul{
+     list-style-type: none;
+ }
+ /*Home Page Testimonials*/
+ .testimonials{
+     overflow: hidden;
+     background-color: rgba(38, 3, 41, 0.513);
+     color:rgba(250, 203, 250, 0.952);
+     padding:50px;
+     justify-content: center;
+     align-content: center;
+
+ }
+ .testimonials .slides{
+     position: relative;
+     width: 500%;
+     margin: 0;
+     margin-left: 0;
+      animation-name: carousel;
+      animation-duration: 40s;
+      animation-iteration-count: infinite;
+ }
+ .testimonials .slides .testimonial1{
+     width: 20%;
+     float:left;
+
+     text-align: center;
+ }
+ .testimonials .slides .testimonial1 p{
+     text-align: center;
+     padding: 20px;
+ }
+ .testimonials .slides .testimonial1 cite{
+     text-align: center;
+ }
+ .coming-soon{ 
+     position: relative;
+     margin: 0 200px 0 200px;
+     height:400px;
+     
+ }
+/*Login Page*/
+.login-box h3{
+    text-align:center;
+    color:purple;
+    padding:10px;
+}
+.login-box label{
+    color:purple;
+}
+.login-box{
+    background-color: rgba(250, 203, 250, 0.952); 
+    justify-self: center;
+    
+    display:inline-block;
+    height: 325px;
+    width: 300px;
+    margin-top:20px ;
+    margin-bottom: 5px;
+    margin-left: 40%;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px purple solid;
+    box-shadow: 0 8px 16px 0 rgba(65, 44, 44, 0.2);
+    transition-duration: 2s;
+    transform: 2s;
+    
+   
+}
+.login-box:hover{
+    transform:translateX(90);
+}
+.login-box form{
+    
+    padding:5px;
+    margin:0 auto;
+    display: inline-block;
+    
+}
+.login-box form input{
+    padding:5px;
+    width:100%;
+    border: 1px purple solid;
+    border-radius: 5px;
+
+}
+.login-box form label{
+    padding:5px;
+}
+.login-box form .button{
+
+    width:100%;
+    padding:3px;
+    margin-top: 15px;
+    background-color:purple;
+    color:rgb(226, 203, 243);
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.login-box form .button:hover{ color:purple;
+    background-color:rgb(179, 85, 179);
+
+
+}
+.login-box p{
+    text-align: center;
+}
+.login-box p a{
+    text-decoration: none;
+    color:purple;
+}
+.login-box p a:hover{
+    color:rgb(252, 6, 252);
+}
+/*About us page*/
+
+.about-us { width: 80%;
+    Height: 100%;
+    align-content: space-around;
+    margin-left: 10%;
+
+}
+.about-us .history{
+    height: 30%;
+    
+}
+.about-us .history img{width: 100%;
+    height:400px;
+   margin-top: 20px;
+}
+.about-us .history .heading{
+    position: relative;
+    margin-top: -25%;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color:rgb(226, 203, 243);
+    text-align: center;
+}
+.about-us .mission{
+    height: 30%;
+    
+    
+}
+.about-us .mission img{
+    width:100%;
+    height: 400px;
+   margin-top: 20px;
+}
+.about-us .mission .heading{
+   
+   
+    font-size: 50px;
+    font-weight: bold;
+    color:purple;
+    text-align: center;
+}
+.about-us .invitation{
+    height:20%;
+    text-align: center;
+    padding:50px;
+}
+.about-us .mission p{
+    text-align: center;
+    padding:50px;
+    margin: 20px;
+    
+}
+.about-us .history p{
+
+    text-align: center;
+    padding:50px;
+    margin-top: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+/*Products Page*/
+.col-md-3{
+    display:flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+.thumbnail .row .col-2{
+    text-align: center;
+    align-content: center;
+}
+.container .row{
+    
+    justify-content: space-evenly;
+}
+
+/*shopping cart styling*/
+#shoppingCartBtn{
+    position: relative;
+    cursor: pointer;
+}
+#shoppingCartBtn:hover{
+    color: rgb(172, 8, 172);
+}
+.productsCount{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color:rgb(243, 224, 243);
+    padding: 0 5px;
+    border-radius: 50%;
+    color: purple;
+}
+.nav-icon{
+    font-size: 1.5rem;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
