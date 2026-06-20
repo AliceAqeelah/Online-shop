@@ -252,6 +252,11 @@ function renderProducts(containerId, limit) {
   `).join('');
 }
 
+// Expose functions used in inline onclick handlers to global scope
+window.addToCart = addToCart;
+window.changeQty = changeQty;
+window.removeFromCart = removeFromCart;
+
 document.addEventListener('DOMContentLoaded', () => {
   renderCart();
 
