@@ -1,227 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop | QT Designs</title>
-  <link rel="stylesheet" href="qt-style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="mine.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8580fa9198.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-color mb-1">
+            <a class="navbar-brand" href="index.html">
+                <h4>HAQEEBATY</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto navbar-nav-scroll"
+                    style="--bs-scroll-height: 100px; justify-content: center;">
+                    <li class="nav-item "> <a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item-active "> <a href="#" class="nav-link">Products</a></li>
+                    <li class="nav-item "> <a href="https://haqeebaty.wordpress.com/" class="nav-link">Blog</a></li>
+                    <li class="nav-item "> <a href="About Us.html" class="nav-link">About Us</a></li>
 
-<!-- NAVBAR -->
-<nav class="site-nav">
-  <a href="index.html" class="nav-brand">
-    <div class="brand-logo">QT</div>
-    <div class="brand-text">
-      <span class="qt">QT</span>
-      <span class="designs">Designs</span>
+                    <li class="nav-item "> <a href="Create Account.html" class="nav-link">Create Account</a></li>
+                    <li class="nav-item ">
+
+                    </li>
+                </ul>
+
+
+            </div>
+            <div id='shoppingCartBtn' class='shoppingCartBtn-inline navbar-right'>
+                <span class='nav-icon'> 
+                    <a href="shoppingCart.html" class="nav-link"></a>
+                    <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </span>
+                <div class='productsCount'>0</div>
+                </a>
+            </div>
+        </nav>
     </div>
-  </a>
+    <br>
 
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="products.html" class="active">Shop</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
 
-  <div class="nav-actions">
-    <button class="cart-btn" id="cartToggle" aria-label="Open cart">
-      🛒
-      <span class="cart-count">0</span>
-    </button>
-    <button class="nav-hamburger" aria-label="Menu">☰</button>
-  </div>
-</nav>
+    <br>
+    <div class="container">
+        <table class="table table-bordered table-stripped table-hover">
+            <thead>
+                <tr>
+                    <td colspan="8" class="text-center">
+                        <h4>IN STOCK</h4>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="col-md-4 text-center">ITEM</th>
+                    <th class="col-md-2 text-center">VARIETY</th>
+                    <th class="col-md-2 text-center">STATUS</th>
+                </tr>
+                <tr class="text-center">
+                    <td class="col-md-4">Picture Books</td>
+                    <td class="col-md-2">1</td>
+                    <td class="col-md-2">Print on Demand</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="col-md-4">Prints</td>
+                    <td class="col-md-2">4</td>
+                    <td class="col-md-2">Readily Available</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="col-md-4">Coloring Pages</td>
+                    <td class="col-md-2">15</td>
+                    <td class="col-md-2">Page Bundles Available</td>
+                </tr>
+                <tr class="text-center">
+                    <td class="col-md-4">Patterns</td>
+                    <td class="col-md-2">1</td>
+                    <td class="col-md-2">Downloadable</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
 
-<!-- SHOP HEADER -->
-<div class="shop-header">
-  <div class="shop-breadcrumb">
-    <a href="index.html">Home</a>
-    <span>›</span>
-    <span style="color: rgba(255,255,255,0.6)">Shop</span>
-  </div>
-  <h1>Our Products</h1>
-  <p>Every item is made-to-order and fully customisable. Contact us to discuss your requirements.</p>
-</div>
 
-<!-- SHOP LAYOUT -->
-<div class="shop-layout">
-  <!-- FILTERS -->
-  <aside class="shop-filters">
-    <div class="filter-group">
-      <h4>Category</h4>
-      <div class="filter-options">
-        <label class="filter-option">
-          <input type="checkbox" checked onchange="filterProducts()"> All Products
-        </label>
-        <label class="filter-option">
-          <input type="checkbox" onchange="filterProducts()" data-cat="Islamic Gifts"> Islamic Gifts
-        </label>
-        <label class="filter-option">
-          <input type="checkbox" onchange="filterProducts()" data-cat="Personalised Gifts"> Personalised Gifts
-        </label>
-        <label class="filter-option">
-          <input type="checkbox" onchange="filterProducts()" data-cat="Stickers &amp; Labels"> Stickers &amp; Labels
-        </label>
-        <label class="filter-option">
-          <input type="checkbox" onchange="filterProducts()" data-cat="Eid &amp; Ramadan"> Eid &amp; Ramadan
-        </label>
-        <label class="filter-option">
-          <input type="checkbox" onchange="filterProducts()" data-cat="Occasion Gifts"> Occasion Gifts
-        </label>
-      </div>
+    <div id='productsDisplay' class="container">
+
     </div>
 
-    <div class="filter-group">
-      <h4>Price Range</h4>
-      <div class="filter-options">
-        <label class="filter-option">
-          <input type="checkbox"> Under R100
-        </label>
-        <label class="filter-option">
-          <input type="checkbox"> R100 – R200
-        </label>
-        <label class="filter-option">
-          <input type="checkbox"> R200 – R350
-        </label>
-        <label class="filter-option">
-          <input type="checkbox"> R350+
-        </label>
-      </div>
+    <div id='cartHeader'>
+
+        <h2>Your Cart</h2>
+
+        <div id="displayCart">
+        </div>
+
+        <div class='cart-footer'>
+            <div id="subTotal">
+            </div>
+            <button id = 'deleteCartItems'class="btn btn-default" onclick='clearCart()'>Clear Cart</button>
+
+        </div>
+
+
+
+
     </div>
 
-    <div class="filter-group" style="background: var(--black); border-color: var(--black);">
-      <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin-bottom: 16px; line-height: 1.6;">Need something bespoke? All our products are fully customisable.</p>
-      <a href="contact.html" class="btn-primary" style="display: block; text-align: center; font-size: 13px;">Request Custom Order</a>
-    </div>
-  </aside>
 
-  <!-- MAIN -->
-  <div>
-    <div class="shop-main-header">
-      <p id="productCount">Showing all 8 products</p>
-      <select class="sort-select" id="sortSelect" onchange="sortProducts()">
-        <option value="default">Sort: Default</option>
-        <option value="price-asc">Price: Low to High</option>
-        <option value="price-desc">Price: High to Low</option>
-        <option value="name">Name: A–Z</option>
-      </select>
-    </div>
-    <div class="product-grid" id="allProducts"></div>
-  </div>
-</div>
 
-<!-- ORDER NOTE BANNER -->
-<div style="background: var(--off-white); padding: 64px 40px; text-align: center; border-top: 1px solid var(--gray-200);">
-  <div style="max-width: 600px; margin: 0 auto;">
-    <span style="font-size: 32px; display: block; margin-bottom: 16px;">📦</span>
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 12px;">How It Works</h2>
-    <p style="color: var(--gray-600); font-size: 15px; line-height: 1.8; margin-bottom: 32px;">
-      All our products are made-to-order. Add items to your cart, then contact us via WhatsApp or email with your customisation details. We'll confirm your order and provide a quote for delivery.
-    </p>
-    <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-      <a href="contact.html" class="btn-primary">Get in Touch</a>
-      <a href="https://www.instagram.com/qt_designs_byaneesanarker" target="_blank" class="btn-outline" style="color: var(--gray-800); border-color: var(--gray-200);">View Instagram</a>
     </div>
-  </div>
-</div>
+    <br>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="brand-text">
-        <span class="qt">QT</span>
-        <span class="designs">Designs</span>
-      </div>
-      <p>Custom Islamic-themed gifting by Aneesa Narker. Creating personalised, meaningful gifts for every milestone.</p>
-      <div class="footer-contact">
-        <a href="tel:+27733703553">📞 &nbsp;+27 73 370 3553</a>
-        <a href="https://www.instagram.com/qt_designs_byaneesanarker" target="_blank">📸 &nbsp;@qt_designs_byaneesanarker</a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <h5>Shop</h5>
-      <ul>
-        <li><a href="products.html">All Products</a></li>
-        <li><a href="products.html">Islamic Gifts</a></li>
-        <li><a href="products.html">Personalised Gifts</a></li>
-        <li><a href="products.html">Stickers &amp; Labels</a></li>
-        <li><a href="products.html">Eid &amp; Ramadan</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Company</h5>
-      <ul>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="contact.html">Custom Orders</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Newsletter</h5>
-      <div class="footer-newsletter">
-        <input type="email" placeholder="Your email address">
-        <button type="button">Subscribe</button>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 QT Designs by Aneesa Narker. All rights reserved.</p>
-    <p>Made with ♥ in South Africa</p>
-  </div>
-</footer>
 
-<!-- CART SIDEBAR -->
-<div class="cart-overlay" id="cartOverlay"></div>
-<div class="cart-sidebar" id="cartSidebar">
-  <div class="cart-sidebar-header">
-    <h3>Your Cart</h3>
-    <button class="cart-close" id="cartCloseBtn">✕</button>
-  </div>
-  <div class="cart-items" id="cartItems"></div>
-  <div class="cart-sidebar-footer">
-    <div class="cart-subtotal">
-      <span>Subtotal</span>
-      <span id="cartSubtotal">R0</span>
-    </div>
-    <div class="cart-total">
-      <span>Total</span>
-      <span id="cartTotal">R0</span>
-    </div>
-    <a href="https://wa.me/27733703553" target="_blank" class="checkout-btn">Request Order via WhatsApp</a>
-    <button class="clear-cart-btn" id="clearCartBtn">Clear cart</button>
-  </div>
-</div>
+    <footer class="text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <h4>HAQEEBATY</h4>
+                    <p>Original Islamic themed products</p>
 
-<script type="module" src="qt-cart.js"></script>
-<script>
-  function filterProducts() {
-    const count = document.getElementById('productCount');
-    if (count) count.textContent = `Showing all ${QT_PRODUCTS.length} products`;
-  }
 
-  function sortProducts() {
-    const val = document.getElementById('sortSelect').value;
-    const container = document.getElementById('allProducts');
-    if (!container) return;
-    const cards = Array.from(container.querySelectorAll('.product-card'));
 
-    cards.sort((a, b) => {
-      const priceA = parseInt(a.querySelector('.product-price').textContent.replace(/\D/g, ''));
-      const priceB = parseInt(b.querySelector('.product-price').textContent.replace(/\D/g, ''));
-      const nameA = a.querySelector('.product-name').textContent;
-      const nameB = b.querySelector('.product-name').textContent;
 
-      if (val === 'price-asc') return priceA - priceB;
-      if (val === 'price-desc') return priceB - priceA;
-      if (val === 'name') return nameA.localeCompare(nameB);
-      return 0;
-    });
+                </div>
+                <div class="col-md-3">
 
-    cards.forEach(c => container.appendChild(c));
-  }
-</script>
+                    <div class="caption">
+
+                        <h6>Blog</h6>
+                        <p>Find out more about the founder of Haqeebaty.</p>
+                    </div>
+
+
+                </div>
+                <div class="col-md-3">
+
+                    <div class="caption">
+
+                        <h6>Our Products</h6>
+                        <div class="list">
+                            <ul>
+                                <li><a href="#">Children's Books</a></li>
+                                <li><a href="#">Coloring Pages</a></li>
+                                <li><a href="#">Illustrated Prints</a></li>
+                                <li><a href="#">Repeat patterns</a></li>
+
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+
+                        <div class="caption">
+                            <h6>About us</h6>
+                            <p>Islamic shop which specializes in selling islamic themed products for children or even
+                                for home decoration</p>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+
+                    <div class="caption">
+
+                        <h6>Subscribe to our Newsletter:</h6>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <p>&copy; Haqeebaty &nbsp&nbsp;All Rights Reserved &nbsp&nbsp;Proudly created by: <a href="#">Aqeelah WebDev</a>
+        </p>
+    </footer>
+
+
+
+    
 </body>
+<script type="text/javascript" src="online.js"></script>
 </html>
