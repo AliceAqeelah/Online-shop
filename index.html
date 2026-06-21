@@ -1,190 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Home</title>
-   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="mine.css" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QT Designs | Custom Islamic Gifting</title>
+  <link rel="stylesheet" href="qt-style.css">
 </head>
-
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-color mb-1">
-            <a class="navbar-brand" href="index.html"><h4>HAQEEBATY</h4></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav ml-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item-active "> <a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item "> <a href="products.html" class="nav-link">Products</a></li>
-                    <li class="nav-item "> <a href="https://haqeebaty.wordpress.com/" class="nav-link">Blog</a></li>
-                    <li class="nav-item "> <a href="#" class="nav-link">About Us</a></li>
-                    <li class="nav-item "> <a href="Create Account.html" class="nav-link">Create Account</a></li>
-                </ul>
-    
-                <form class="form-inline navbar-right" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Search</button>
-                </form>
-            </div>
-        </nav>
-    </div>
-    <br>
-    <div class="slider">
-        <div class="images">
-            <img src="images/introimage.jpg" alt="intro" style="filter: blur(6px)">
-            <img src="images/book2.jpg" alt="BOOKS">
-            <img src="images/coloring.jpg" alt="COLORING">
-            <img src="images/prints.jpg" alt="PRINTS">
-            <img src="images/pattern2.jpg" alt="PATTERN">
-        </div>
 
-
+<!-- NAVBAR -->
+<nav class="site-nav">
+  <a href="index.html" class="nav-brand">
+    <div class="brand-logo">QT</div>
+    <div class="brand-text">
+      <span class="qt">QT</span>
+      <span class="designs">Designs</span>
     </div>
-    <div class="slider">
-        <div class="images">
-            <div class="text-center">
-                <p>OUR PRODUCTS</p>
-            </div>
-            <div class="text-center">
-                <p>CHILDREN'S BOOKS</p>
-            </div>
-            <div class="text-center">
-                <p>COLORING PAGES</p>
-            </div>
-            <div class="text-center">
-                <p>ILLUSTRATED PRINTS</p>
-            </div>
-            <div class="text-center">
-                <p>REPEAT PATTERNS</p>
-            </div>
-      </div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="products.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <button class="cart-btn" id="cartToggle" aria-label="Open cart">
+      🛒
+      <span class="cart-count">0</span>
+    </button>
+    <button class="nav-hamburger" aria-label="Menu">☰</button>
   </div>
-   
-    
-    <div class="testimonials">
-        <figure class=slides>
-            <blockquote class="testimonial1">
-                <p>"My kids absolutely love reading 'Allah Created Them All'. It is a beautiful picture book with bright
-                    beautiful illustrations. My kids were engaged the whole time."</p><cite>Ayesha Hakeem</cite>
-            </blockquote>
+</nav>
 
-
-
-            <blockquote class="testimonial1">
-                <p>"Delivery was on time and the parcel well packaged. They even call to ensure you are fully satisfied
-                    with the product."</p><cite>Yahya Alex</cite>
-            </blockquote>
-
-
-
-            <blockquote class="testimonial1">
-                <p>"I totally love the Islamic prints. They blend well in my daughter's room. They add that extra touch
-                    that a little muslimah needs."</p><cite>Asiyah Ndubz</cite>
-            </blockquote>
-            <blockquote class="testimonial1">
-                <p>"Its good to find a shop that has original islamic items.Their product range covers a wide range of people, from kids to adults. There is something for everyone."</p><cite>Abdul Quddus</cite>
-            </blockquote>
-
-            <blockquote class="testimonial1">
-                <p>"The coloring pages are very good illustrations of little people doing different types of jobs. It is a way to teach kids about careers. I purchased the coloring page bundle to have my kids color through all the available career pages."</p><cite>Haleema Josiah</cite>
-            </blockquote>
-
-
-        </figure>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="eyebrow">★ &nbsp;Custom Islamic Gifting &nbsp;★</div>
+      <h1>Gifts That Tell <span class="accent">Your Story</span></h1>
+      <p class="subtitle">Personalised, meaningful gifts for every milestone — Eid, matric farewell, weddings, birthdays and beyond. All made with love by Aneesa Narker.</p>
+      <div class="hero-cta">
+        <a href="products.html" class="btn-primary">Shop Now ★</a>
+        <a href="contact.html" class="btn-outline">Request Custom Order</a>
+      </div>
     </div>
-    <br>
-    <footer class="text-center">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-3">
-                    <h4>HAQEEBATY</h4>
-                    <p>Original Islamic themed products</p>
+    <div class="hero-image-grid">
+      <div class="hero-img-card">
+        <img src="https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gift sets">
+        <span class="img-label">Gift Sets</span>
+      </div>
+      <div class="hero-img-card">
+        <img src="https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Chocolate bars">
+        <span class="img-label">Chocolates</span>
+      </div>
+      <div class="hero-img-card">
+        <img src="https://images.pexels.com/photos/1449667/pexels-photo-1449667.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Jewellery cases">
+        <span class="img-label">Jewellery Cases</span>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- MARQUEE -->
+<div class="marquee-banner">
+  <div class="marquee-track">
+    <span>Custom Chocolates</span><span class="divider">✦</span>
+    <span>Islamic Compact Mirrors</span><span class="divider">✦</span>
+    <span>Eid Gift Sets</span><span class="divider">✦</span>
+    <span>Personalised Stickers</span><span class="divider">✦</span>
+    <span>Party Favour Bags</span><span class="divider">✦</span>
+    <span>Quran Dua Cards</span><span class="divider">✦</span>
+    <span>Matric Farewell Gifts</span><span class="divider">✦</span>
+    <span>Teacher Appreciation</span><span class="divider">✦</span>
+    <span>Custom Chocolates</span><span class="divider">✦</span>
+    <span>Islamic Compact Mirrors</span><span class="divider">✦</span>
+    <span>Eid Gift Sets</span><span class="divider">✦</span>
+    <span>Personalised Stickers</span><span class="divider">✦</span>
+    <span>Party Favour Bags</span><span class="divider">✦</span>
+    <span>Quran Dua Cards</span><span class="divider">✦</span>
+    <span>Matric Farewell Gifts</span><span class="divider">✦</span>
+    <span>Teacher Appreciation</span><span class="divider">✦</span>
+  </div>
+</div>
 
+<!-- CATEGORIES -->
+<div class="section">
+  <div class="section-header">
+    <span class="tag">Browse by Category</span>
+    <h2>What Are You Looking For?</h2>
+    <p>From Islamic gifting to personalised keepsakes — we create something special for every occasion.</p>
+  </div>
+  <div class="category-grid">
+    <div class="category-card">
+      <img src="https://images.pexels.com/photos/1537268/pexels-photo-1537268.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Islamic Gifts">
+      <div class="cat-overlay">
+        <h3>Islamic Gifts</h3>
+        <span class="cat-count">Mirrors · Dua Cards · Quranic Gifts</span>
+      </div>
+    </div>
+    <div class="category-card">
+      <img src="https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Personalised Gifts">
+      <div class="cat-overlay">
+        <h3>Personalised Gifts</h3>
+        <span class="cat-count">Chocolates · Jewellery Cases · More</span>
+      </div>
+    </div>
+    <div class="category-card">
+      <img src="https://images.pexels.com/photos/1570779/pexels-photo-1570779.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Stickers & Labels">
+      <div class="cat-overlay">
+        <h3>Stickers &amp; Labels</h3>
+        <span class="cat-count">Round Stickers · Favour Bags · Labels</span>
+      </div>
+    </div>
+    <div class="category-card">
+      <img src="https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Eid & Ramadan">
+      <div class="cat-overlay">
+        <h3>Eid &amp; Ramadan</h3>
+        <span class="cat-count">Gift Sets · Seasonal Specials</span>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- FEATURED PRODUCTS -->
+<div style="background: var(--off-white); padding: 80px 0;">
+  <div class="section" style="padding-top: 0; padding-bottom: 0;">
+    <div class="section-header">
+      <span class="tag">Featured</span>
+      <h2>Most Loved Products</h2>
+      <p>Our customers' favourites — personalised, meaningful and made with care.</p>
+    </div>
+    <div class="product-grid" id="featuredProducts"></div>
+    <div style="text-align: center; margin-top: 48px;">
+      <a href="products.html" class="btn-primary">View All Products ★</a>
+    </div>
+  </div>
+</div>
 
-                </div>
-                <div class="col-md-3">
+<!-- FEATURES -->
+<div class="features-bg">
+  <div class="features-grid">
+    <div class="feature-item">
+      <div class="feature-icon">✦</div>
+      <h4>Fully Customisable</h4>
+      <p>Every product is personalised to your exact requirements — your name, your message, your design.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🌙</div>
+      <h4>Islamic Inspired</h4>
+      <p>Thoughtfully designed with Islamic values and aesthetics at the heart of every product.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">⚡</div>
+      <h4>Quick Turnaround</h4>
+      <p>Fast production times so your personalised gift arrives when you need it.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">♥</div>
+      <h4>Made with Love</h4>
+      <p>A small business with a big heart — every order is handled personally by Aneesa.</p>
+    </div>
+  </div>
+</div>
 
-                    <div class="caption">
-
-                        <h6>Blog</h6>
-                        <p>Find out more about the founder of Haqeebaty.</p>
-                    </div>
-
-
-                </div>
-                <div class="col-md-3">
-
-                    <div class="caption">
-
-                        <h6>Our Products</h6>
-                        <div class="list">
-                            <ul>
-                                <li><a href="#">Children's Books</a></li>
-                                <li><a href="#">Coloring Pages</a></li>
-                                <li><a href="#">Illustrated Prints</a></li>
-                                <li><a href="#">Repeat patterns</a></li>
-
-                            </ul>
-                        </div>
-
-
-
-                    </div>
-
-
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-
-                        <div class="caption">
-                            <h6>About us</h6>
-                            <p>Islamic shop which specializes in selling islamic themed products for children or even
-                                for home decoration</p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-3">
-
-                    <div class="caption">
-
-                        <h6>Subscribe to our Newsletter:</h6>
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-
-
-
-                    </div>
-
-
-                </div>
-
-            </div>
+<!-- ABOUT STRIP -->
+<div class="about-strip">
+  <div class="about-strip-inner">
+    <div class="about-strip-img">
+      <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=700" alt="About QT Designs">
+    </div>
+    <div class="about-strip-text">
+      <span class="tag">Our Story</span>
+      <h2>The Heart Behind <em>QT Designs</em></h2>
+      <p>QT Designs was born from a passion for creating meaningful, personalised gifts that celebrate life's most important moments through an Islamic lens.</p>
+      <p>Founded by Aneesa Narker, every product is crafted with intention — whether it's a custom chocolate bar for a matric farewell, an Islamic mirror as a nikah gift, or party stickers for a little one's birthday.</p>
+      <div class="about-stats">
+        <div class="about-stat">
+          <h3>500+</h3>
+          <p>Happy Customers</p>
         </div>
-        <p>&copy; Haqeebaty &nbsp&nbsp;All Rights Reserved &nbsp&nbsp;Proudly created by: <a href="#">Aqeelah WebDev</a>
-        </p>
-    </footer>
+        <div class="about-stat">
+          <h3>8+</h3>
+          <p>Product Categories</p>
+        </div>
+        <div class="about-stat">
+          <h3>100%</h3>
+          <p>Custom Made</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- TESTIMONIALS -->
+<div class="testimonials-section">
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <div class="section-header">
+      <span class="tag">Reviews</span>
+      <h2>What Our Customers Say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"The Eid gift sets were absolutely stunning. Everyone at the gathering loved them. Aneesa was so helpful and delivered exactly what I envisioned."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">F</div>
+          <div>
+            <div class="testimonial-name">Fatima M.</div>
+            <div class="testimonial-location">Johannesburg</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"I ordered the matric chocolate bars for my daughter's farewell and they were a huge hit! Beautiful packaging, great quality and so personal."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">A</div>
+          <div>
+            <div class="testimonial-name">Amina K.</div>
+            <div class="testimonial-location">Durban</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"The Islamic mirror with the dua made such a meaningful gift for my friend's bridal shower. She cried happy tears! Will definitely order again."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">Z</div>
+          <div>
+            <div class="testimonial-name">Zainab R.</div>
+            <div class="testimonial-location">Cape Town</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- INSTAGRAM CTA -->
+<div class="instagram-cta">
+  <h2>Follow Our Journey</h2>
+  <p>See our latest creations, behind-the-scenes and customer unboxings on Instagram.</p>
+  <a href="https://www.instagram.com/qt_designs_byaneesanarker" target="_blank" class="instagram-handle">
+    <span class="instagram-icon">📸</span>
+    @qt_designs_byaneesanarker
+  </a>
+</div>
 
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand-text">
+        <span class="qt">QT</span>
+        <span class="designs">Designs</span>
+      </div>
+      <p>Custom Islamic-themed gifting by Aneesa Narker. Creating personalised, meaningful gifts for every milestone.</p>
+      <div class="footer-contact">
+        <a href="tel:+27733703553">📞 &nbsp;+27 73 370 3553</a>
+        <a href="https://www.instagram.com/qt_designs_byaneesanarker" target="_blank">📸 &nbsp;@qt_designs_byaneesanarker</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Shop</h5>
+      <ul>
+        <li><a href="products.html">All Products</a></li>
+        <li><a href="products.html">Islamic Gifts</a></li>
+        <li><a href="products.html">Personalised Gifts</a></li>
+        <li><a href="products.html">Stickers &amp; Labels</a></li>
+        <li><a href="products.html">Eid &amp; Ramadan</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Custom Orders</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Newsletter</h5>
+      <div class="footer-newsletter">
+        <input type="email" placeholder="Your email address">
+        <button type="button">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 QT Designs by Aneesa Narker. All rights reserved.</p>
+    <p>Made with ♥ in South Africa</p>
+  </div>
+</footer>
 
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-sidebar-header">
+    <h3>Your Cart</h3>
+    <button class="cart-close" id="cartCloseBtn">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-sidebar-footer">
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <span id="cartSubtotal">R0</span>
+    </div>
+    <div class="cart-total">
+      <span>Total</span>
+      <span id="cartTotal">R0</span>
+    </div>
+    <a href="https://wa.me/27733703553" target="_blank" class="checkout-btn">Request Order via WhatsApp</a>
+    <button class="clear-cart-btn" id="clearCartBtn">Clear cart</button>
+  </div>
+</div>
+
+<script type="module" src="qt-cart.js"></script>
 </body>
-
 </html>
