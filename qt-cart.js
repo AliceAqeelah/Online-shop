@@ -217,7 +217,7 @@ function showToast(msg) {
     toast = document.createElement('div');
     toast.id = 'qt-toast';
     toast.className = 'toast';
-    toast.innerHTML = `<span class="toast-icon">★</span><span class="toast-msg"></span>`;
+    toast.innerHTML = `<span class="toast-icon">✓</span><span class="toast-msg"></span>`;
     document.body.appendChild(toast);
   }
   toast.querySelector('.toast-msg').textContent = msg;
