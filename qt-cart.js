@@ -31,7 +31,7 @@ const QT_PRODUCTS = [
     price: 250,
     badge: "New",
     badgeStyle: "new",
-    imageSrc: "https://images.pexels.com/photos/1449667/pexels-photo-1449667.jpeg?auto=compress&cs=tinysrgb&w=600",
+    imageSrc: "https://images.pexels.com/photos/1413420/pexels-photo-1413420.jpeg?auto=compress&cs=tinysrgb&w=600",
     count: 1,
     customisable: true,
   },
@@ -217,7 +217,7 @@ function showToast(msg) {
     toast = document.createElement('div');
     toast.id = 'qt-toast';
     toast.className = 'toast';
-    toast.innerHTML = `<span class="toast-icon">★</span><span class="toast-msg"></span>`;
+    toast.innerHTML = `<span class="toast-icon">✓</span><span class="toast-msg"></span>`;
     document.body.appendChild(toast);
   }
   toast.querySelector('.toast-msg').textContent = msg;
@@ -251,6 +251,11 @@ function renderProducts(containerId, limit) {
     </div>
   `).join('');
 }
+
+// Expose functions used in inline onclick handlers to global scope
+window.addToCart = addToCart;
+window.changeQty = changeQty;
+window.removeFromCart = removeFromCart;
 
 document.addEventListener('DOMContentLoaded', () => {
   renderCart();
